@@ -25,7 +25,7 @@ export function ShopCard({
     <Card>
       <div className="absolute top-2 left-2 w-14 h-6 flex items-center gap-1 rounded-2xl py-1 px-[10px] bg-dark-purple/70 backdrop-blur-[5px]">
         <Star fill="#8162FF" className="text-primary" />
-        <span className="bold-xs">{rating.toFixed(1)}</span>
+        <span className="bold-xs text-white">{rating.toFixed(1)}</span>
       </div>
       <div className="w-full h-[159px]">
         <Image
