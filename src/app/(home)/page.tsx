@@ -27,12 +27,12 @@ export default function Home() {
       </section>
 
       <section className="py-10 px-32 space-y-5">
-        <span className="bold-xl">Populares</span>
+        <span className="bold-xl text-white">Populares</span>
         <Carousel size={10} />
       </section>
 
       <section className="pt-10 px-32 space-y-5">
-        <span className="bold-xl">Mais visitados</span>
+        <span className="bold-xl text-white">Mais visitados</span>
         <Carousel size={10} />
       </section>
     </div>
