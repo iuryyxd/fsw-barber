@@ -1,6 +1,6 @@
 import { SearchForm } from "@/components";
-import { format } from "date-fns";
 import { HeroCarousel } from "./hero-carousel";
+import { formatFullDate } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -11,9 +11,7 @@ export default function Home() {
             <span className="regular-2xl">
               Olá, <b>Faça seu login!</b>
             </span>
-            <span className="regular-sm">
-              {format(new Date(), "eeee',' e 'de' MMMM")}
-            </span>
+            <span className="regular-sm">{formatFullDate(new Date())}</span>
           </div>
 
           <div className="w-[439px]">
