@@ -9,7 +9,7 @@ export function SearchForm() {
         type="submit"
         className="w-10 h-9 rounded-lg p-[.625rem] bg-primary grid place-content-center hover:bg-primary/80 transition-colors"
       >
-        <Search size={20} />
+        <Search size={20} className="text-white" />
       </button>
     </form>
   );

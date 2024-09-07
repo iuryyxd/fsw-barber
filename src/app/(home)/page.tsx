@@ -7,10 +7,12 @@ export default function Home() {
       <section className="relative flex items-center justify-between px-32 py-16 w-full h-[28.9375rem] bg-[url('/assets/hero.jpg')] bg-no-repeat bg-cover bg-slate-950/30">
         <div className="space-y-11 z-[1] self-start">
           <div className="flex flex-col">
-            <span className="regular-2xl">
+            <span className="regular-2xl text-white">
               Olá, <b>Faça seu login!</b>
             </span>
-            <span className="regular-sm">{formatFullDate(new Date())}</span>
+            <span className="regular-sm text-white">
+              {formatFullDate(new Date())}
+            </span>
           </div>
 
           <div className="w-[439px]">
