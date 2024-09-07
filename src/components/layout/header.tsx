@@ -1,22 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import Logo from "@/assets/logo.png";
-import { Button, Input } from "@/components";
-import { CalendarDays, CircleUserRound, Search } from "lucide-react";
+import Logo from "/public/assets/logo.png";
+import { Button, SearchForm } from "@/components";
+import { CalendarDays, CircleUserRound } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export function Header() {
+  const pathname = usePathname();
+
   return (
     <div className="bg-background w-full py-[1.875rem] px-32 flex items-center justify-between">
       <Image src={Logo} alt="FSW Barber logo" />
 
-      <form className="max-w-[36rem] w-full flex items-center gap-2">
-        <Input placeholder="Buscar Barbearias" />
-        <button
-          type="submit"
-          className="w-10 h-9 rounded-lg p-[.625rem] bg-primary grid place-content-center hover:bg-primary/80 transition-colors"
-        >
-          <Search size={20} />
-        </button>
-      </form>
+      {pathname === "/" ? null : <SearchForm />}
 
       <div className="flex items-center gap-6">
         <Button variant="outline">
