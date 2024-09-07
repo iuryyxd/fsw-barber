@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import "@/lib/date-fns";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 
 export const metadata: Metadata = {
   title: "FSW Barber",
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className={`${nunito.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
