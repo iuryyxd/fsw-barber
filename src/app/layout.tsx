@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import "@/lib/date-fns";
 import { Header } from "@/components";
 
 export const metadata: Metadata = {
