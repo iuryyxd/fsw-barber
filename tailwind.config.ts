@@ -21,7 +21,7 @@ const config: Config = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: '#8162FF',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
@@ -50,15 +50,15 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			"dark-purple": "var(--dark-purple)",
+			"dark-purple": "#221C3D",
 			gray: {
-				100: "var(--gray-100)",
-				200: "var(--gray-200)",
-				300: "var(--gray-300)",
+				100: "#26272B",
+				200: "#4E525B",
+				300: "#838896",
 			},
-			white: "var(--white)",
-			red: "var(--red)",
-			"dark-red": "var(--dark-red)",
+			white: "#FFFFFF",
+			red: "#EF4444",
+			"dark-red": "#2F1F1F",
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
