@@ -1,5 +1,4 @@
-import { SearchForm } from "@/components";
-import { HeroCarousel } from "./hero-carousel";
+import { SearchForm, Carousel } from "@/components";
 import { formatFullDate } from "@/lib/utils";
 
 export default function Home() {
@@ -21,10 +20,20 @@ export default function Home() {
 
         <div className="flex flex-col gap-5 z-[1]">
           <span className="bold-sm text-gray-300">RECOMENDADOS</span>
-          <HeroCarousel />
+          <Carousel className="max-w-[32rem]" size={4} />
         </div>
 
         <div className="w-full h-full left-0 absolute bg-black/85 z-0" />
+      </section>
+
+      <section className="py-10 px-32 space-y-5">
+        <span className="bold-xl">Populares</span>
+        <Carousel size={10} />
+      </section>
+
+      <section className="pt-10 px-32 space-y-5">
+        <span className="bold-xl">Mais visitados</span>
+        <Carousel size={10} />
       </section>
     </div>
   );
